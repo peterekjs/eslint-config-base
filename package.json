@@ -1,0 +1,22 @@
+{
+  "name": "@peterek/eslint-config-base",
+  "version": "0.0.0",
+  "description": "Basic eslint configuration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterekjs/eslint-config-base.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Jiri Peterek <jiri.peterek@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterekjs/eslint-config-base/issues"
+  },
+  "homepage": "https://github.com/peterekjs/eslint-config-base#readme",
+  "peerDependencies": {
+    "eslint": "6.x.x"
+  }
+}
