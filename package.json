@@ -1,6 +1,6 @@
 {
   "name": "@peterek/eslint-config-base",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Basic eslint configuration",
   "main": "index.js",
   "repository": {
