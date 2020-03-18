@@ -1,4 +1,4 @@
-const braceStyle = requrie('./lib/brace-style.js')
+const braceStyle = require('./lib/brace-style.js')
 
 module.exports = {
     env: {
