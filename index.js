@@ -16,6 +16,9 @@ module.exports = {
         navigator: 'readonly',
         window: 'readonly'
     },
+    ignorePatterns: [
+        'node_modules/'
+    ],
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module'
@@ -33,16 +36,26 @@ module.exports = {
         'arrow-parens': [2, 'as-needed'],
         'comma-dangle': [2, 'only-multiline'],
         'curly': [2, 'multi-line'],
+        'import/export': 2,
+        'import/no-duplicates': 1,
         'import/no-unresolved': 0,
         'new-parens': [2, 'never'],
         'no-cond-assign': [2, 'except-parens'],
         'no-console': [1, { allow: ['info', 'warn', 'error'] }],
         'no-constant-condition': [2, { checkLoops: true }],
+        'no-debugger': 1,
         'no-dupe-else-if': 2,
         'no-empty': 0,
         'no-multiple-empty-lines': [2, { max: 2, maxEOF: 0 }],
         'no-undefined': 2,
         'no-void': 0,
+        'prefer-const': [
+            2,
+            {
+                destructuring: 'any',
+                ignoreReadBeforeAssign: false
+            }
+        ],
         'quote-props': [2, 'consistent-as-needed']
     },
     settings: {
