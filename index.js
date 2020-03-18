@@ -7,6 +7,8 @@ module.exports = {
         es6: true
     },
     extends: [
+        'plugin:import/errors',
+        'plugin:import/warnings',
         'standard'
     ],
     globals: {
@@ -19,6 +21,7 @@ module.exports = {
         sourceType: 'module'
     },
     plugins: [
+        'import',
         'json',
         'node',
         'promise',
@@ -30,6 +33,7 @@ module.exports = {
         'arrow-parens': [2, 'as-needed'],
         'comma-dangle': [2, 'only-multiline'],
         'curly': [2, 'multi-line'],
+        'import/no-unresolved': 0,
         'new-parens': [2, 'never'],
         'no-cond-assign': [2, 'except-parens'],
         'no-console': [1, { allow: ['info', 'warn', 'error'] }],
@@ -39,6 +43,16 @@ module.exports = {
         'no-multiple-empty-lines': [2, { max: 2, maxEOF: 0 }],
         'no-undefined': 2,
         'no-void': 0,
-        'quote-props': [2, 'consistent-as-needed'],
+        'quote-props': [2, 'consistent-as-needed']
+    },
+    settings: {
+        'import/extensions': [
+            '.js',
+            '.jsx',
+            '.json'
+        ],
+        'import/parsers': {
+            'babel': ['.js', '.jsx']
+        }
     }
 }
