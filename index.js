@@ -39,7 +39,7 @@ module.exports = {
         'import/export': 2,
         'import/no-duplicates': 1,
         'import/no-unresolved': 0,
-        'new-parens': [2, 'never'],
+        'new-parens': 0,
         'no-cond-assign': [2, 'except-parens'],
         'no-console': [1, { allow: ['info', 'warn', 'error'] }],
         'no-constant-condition': [2, { checkLoops: true }],
