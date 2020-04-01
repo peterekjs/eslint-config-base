@@ -48,6 +48,7 @@ module.exports = {
         'no-empty': 0,
         'no-multiple-empty-lines': [2, { max: 2, maxEOF: 0 }],
         'no-undefined': 2,
+        "no-unused-vars": 1,
         'no-void': 0,
         'prefer-const': [
             2,
